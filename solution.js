@@ -14,7 +14,7 @@ What if your interviewer had follow-up questions, for example asking for maximum
 
 Solution:
 
-var arr = [1,2,2,2,4,4,4,5,5,5,6,99];
+var arr = [500, 500, 450, 400, 375, 350, 325, 300, 300];
 
 function avarageFinder (arr) {
   
@@ -46,10 +46,11 @@ function avarageFinder (arr) {
   }
   modeArr.push(mode)
    for(var k in obj) {
-  	 if (obj[k] == largest && k != mode) {
+  	 if (obj[k] == largest && k != mode && largest != 0) {
      modeArr.push(k)
      };
   }
+  if (modeArr[0] == undefined) { modeArr = 'No mode was found'}
 
   return [mean,modeArr];
   
