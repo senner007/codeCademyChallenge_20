@@ -1,4 +1,6 @@
-The Challenge
+The Challenge:
+
+link : https://discuss.codecademy.com/t/challenge-calculate-max-min-and-averages/214283
 
 You’re training for a marathon and have a list of times in which you’ve completed your training runs. Write a function, averageFinder that will return the mean69 and mode106 of your race times. Make sure that you write your functions and find these answers from scratch – don’t use imported tools!
 Function name: averageFinder
