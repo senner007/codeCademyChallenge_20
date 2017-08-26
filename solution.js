@@ -44,10 +44,9 @@ function avarageFinder (arr) {
      mode = k;
      };
   }
-console.log(mode)
 modeArr.push(mode)
    for(var k in obj) {
-  	 if (obj[k] == largest && k != modeArr[0] && largest != 0) {
+  	 if (obj[k] == largest && k != mode && largest != 0) {
      modeArr.push(k)
      };
   }
@@ -57,6 +56,6 @@ modeArr.push(mode)
 
 }
 
-var arr = [1,2,1,5,2,1,2,1,5,4,5,2,1,5,2,7,6,6,6,6,6,1,2,6,6];
+var arr = [2,2,1,1,1,7,7,7,7,1,1,2,2,2,2];
 var meanMode = avarageFinder(arr);
 console.log(meanMode[1])
